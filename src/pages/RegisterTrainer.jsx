@@ -508,7 +508,7 @@ export default function RegisterTrainer() {
   });
 
   const [profilePic, setProfilePic] = useState(null);
-  const [certifications, setCertifications] = useState(null);
+  const [certifications, setCertifications] = useState([]);
   // const history = useNavigate();
   const navigate = useNavigate();
 
@@ -520,11 +520,22 @@ export default function RegisterTrainer() {
     }));
   };
 
+  // const handleFileChange = (e, type) => {
+  //   if (type === "profilePic") {
+  //     setProfilePic(e.target.files[0]);
+  //   } else if (type === "certifications") {
+  //     setCertifications(e.target.files[0]);
+  //   }
+  // };
+
   const handleFileChange = (e, type) => {
+    const files = e.target.files;
+
     if (type === "profilePic") {
-      setProfilePic(e.target.files[0]);
+      setProfilePic(files[0]);
     } else if (type === "certifications") {
-      setCertifications(e.target.files[0]);
+      const selectedFiles = Array.from(files);
+      setCertifications((prev) => [...prev, ...selectedFiles]); // append files
     }
   };
 
@@ -550,7 +561,12 @@ export default function RegisterTrainer() {
         data.append(key, formData[key]);
       }
       if (profilePic) data.append("profilePic", profilePic);
-      if (certifications) data.append("certifications", certifications);
+      // if (certifications) data.append("certifications", certifications);
+      if (certifications.length > 0) {
+        certifications.forEach((file) => {
+          data.append("certifications", file); // ✅ One-by-one
+        });
+      }
 
       const response = await axios.post("/signup-trainer", data, {
         headers: { "Content-Type": "multipart/form-data" },
@@ -817,13 +833,14 @@ export default function RegisterTrainer() {
                 </div>
 
                 {/* Certifications Upload */}
-                <div>
+                {/* <div>
                   <label className="block text-sm font-medium mb-2">
                     Upload Certifications
                   </label>
                   <input
                     type="file"
                     accept=".pdf,image/*"
+                    multiple
                     onChange={(e) => handleFileChange(e, "certifications")}
                     className="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
                   />
@@ -840,6 +857,41 @@ export default function RegisterTrainer() {
                           className="w-32 h-32 object-cover rounded-lg mx-auto mt-2"
                         />
                       )}
+                    </div>
+                  )}
+                </div> */}
+                <div>
+                  <label className="block text-sm font-medium mb-2">
+                    Upload Certifications
+                  </label>
+                  <input
+                    type="file"
+                    accept=".pdf,image/*"
+                    multiple
+                    onChange={(e) => handleFileChange(e, "certifications")}
+                    className="w-full p-3 rounded-md border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+
+                  {certifications.length > 0 && (
+                    <div className="mt-4 space-y-4">
+                      {certifications.map((file, index) => (
+                        <div key={index}>
+                          <p className="text-gray-700">
+                            {file.name}{" "}
+                            <span className="text-sm text-gray-500">
+                              (Preview)
+                            </span>
+                          </p>
+                          {file.type.startsWith("image") && (
+                            <img
+                              src={URL.createObjectURL(file)}
+                              alt={`Certification Preview ${index + 1}`}
+                              className="w-32 h-32 object-cover rounded-lg mx-auto mt-2"
+                            />
+                          )}
+                          {/* Optionally handle PDF preview or icons here */}
+                        </div>
+                      ))}
                     </div>
                   )}
                 </div>
