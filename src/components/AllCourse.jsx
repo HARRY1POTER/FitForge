@@ -73,7 +73,6 @@ const ClassesSection = () => {
           {classData.map((cls) => (
             <SwiperSlide key={cls.id}>
               <div className="bg-white rounded-lg overflow-hidden shadow-lg w-full">
-                {/* Card Banner */}
                 <div className="card-banner w-full h-[220px] overflow-hidden">
                   <img
                     src={cls.image}
@@ -82,7 +81,6 @@ const ClassesSection = () => {
                   />
                 </div>
 
-                {/* Card Content */}
                 <div className="card-content p-6">
                   <div className=" flex items-center mb-4">
                     <img
@@ -99,7 +97,6 @@ const ClassesSection = () => {
                     {cls.description}
                   </p>
 
-                  {/* Progress Bar */}
                   <div className="card-progress">
                     <div className="flex justify-between items-center mb-2 text-sm font-semibold text-gray-700">
                       <span>Class Full</span>
