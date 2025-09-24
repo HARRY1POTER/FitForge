@@ -1,0 +1,51 @@
+[
+  {
+    "quote": "Working with Samuel was a game-changer! His Tailwind CSS skills brought our UI to life with a clean, modern, and fully responsive design.",
+    "name": "Sarah M",
+    "role": "Startup Founder",
+    "image": "https://images.unsplash.com/photo-1665686307516-1915b9616526?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxmZW1hbGV8ZW58MHwwfHx8MTc0MzU5Njc5OXww&ixlib=rb-4.0.3&q=80&w=1080",
+    "link": "/"
+  },
+  {
+    "quote": "Finding a great Laravel developer is tough, but Samuel exceeded all my expectations. His code is clean, efficient, and highly scalable.",
+    "name": "Daniel S",
+    "role": "Business Owner",
+    "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxwZXJzb258ZW58MHwwfHx8MTc0MzMyNzEzNHww&ixlib=rb-4.0.3&q=80&w=1080",
+    "link": "/"
+  },
+  {
+    "quote": "A rare talent who excels in Tailwind, Nuxt.js, and Laravel! He built a full-stack web app that is both powerful and beautiful.",
+    "name": "John M",
+    "role": "Startup CEO",
+    "image": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxwZXJzb258ZW58MHwwfHx8MTc0MzMyNzEzNHww&ixlib=rb-4.0.3&q=80&w=1080",
+    "link": "/"
+  },
+  {
+    "quote": "I struggled with bloated CSS files until Samuel revamped our frontend using Tailwind. The result? A lightweight, maintainable, and stunning interface!",
+    "name": "James L",
+    "role": "Frontend Engineer",
+    "image": "https://images.unsplash.com/photo-1473830394358-91588751b241?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw5fHxwZXJzb258ZW58MHwwfHx8MTc0MzMyNzEzNHww&ixlib=rb-4.0.3&q=80&w=1080",
+    "link": "/"
+  },
+  {
+    "quote": "I can’t recommend Samuel enough! He transformed our Vue.js project into a high-performance Nuxt.js app with seamless API integration.",
+    "name": "Laura P",
+    "role": "Marketing Manager",
+    "image": "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8d29tYW58ZW58MHwwfHx8MTc0MzM5ODE0N3ww&ixlib=rb-4.0.3&q=80&w=1080",
+    "link": "/"
+  },
+  {
+    "quote": "If you’re looking for a top-tier Laravel developer, look no further. Samuel delivers quality code and always meets deadlines.",
+    "name": "Lisa T",
+    "role": "Tech Founder",
+    "image": "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8d29tYW58ZW58MHwwfHx8MTc0MzM5ODE0N3ww&ixlib=rb-4.0.3&q=80&w=1080",
+    "link": "/"
+  },
+  {
+    "quote": "Thanks to Samuel, our Nuxt.js app now loads in a fraction of the time and ranks higher on search engines!",
+    "name": "Kevin H",
+    "role": "Digital Marketer",
+    "image": "https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMHx8bWVufGVufDB8MHx8fDE3NDMzOTgxOTd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+    "link": "/"
+  }
+]
