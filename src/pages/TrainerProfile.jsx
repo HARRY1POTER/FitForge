@@ -438,7 +438,7 @@ export default function TrainerProfile() {
             </div>
 
             {/* Right Panel */}
-            <div className="md:w -2/3 p-6 space-y-6">
+            <div className="lg:w-2/3 p-6 space-y-6">
               {/* Info Section */}
               <div>
                 <h3 className="text-xl font-semibold uppercase border-b pb-2 tracking-wide text-gray-700 mb-4">
@@ -515,7 +515,7 @@ export default function TrainerProfile() {
                   <h3 className="text-xl font-semibold uppercase border-b pb-2 tracking-wide text-gray-700 mb-4">
                     Bio
                   </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-wrap">
+                  <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-wrap break-words">
                     {trainer.bio}
                   </p>
                 </div>

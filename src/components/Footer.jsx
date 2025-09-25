@@ -6,7 +6,7 @@ import { IoIosClock } from "react-icons/io";
 const Footer = () => {
   return (
     <>
-      <footer className="text-sm bg-green-800 text-gray-200 font-sans lg:px-40">
+      <footer className="text-sm bg-green-800 text-gray-200 font-sans xl:px-40">
         {/* Footer Top */}
         <div
           className="section footer-top bg-cover bg-center relative py-16"
@@ -93,10 +93,10 @@ const Footer = () => {
                   </address>
                 </li>
                 <li className="flex items-start gap-4">
-                  <div className="icon bg-red-500 text-white p-2 rounded-full text-xl">
+                  <div className="icon mt-1 bg-red-500 text-white p-2 rounded-full text-xl">
                     <IoCall />
                   </div>
-                  <div className="space-y-1">
+                  <div className="grid">
                     <a
                       href="tel:18001213637"
                       className="hover:text-red-500 transition"
@@ -112,10 +112,10 @@ const Footer = () => {
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <div className="icon bg-red-500 text-white p-2 rounded-full text-xl">
+                  <div className="icon mt-1 bg-red-500 text-white p-2 rounded-full text-xl">
                     <IoMail />
                   </div>
-                  <div className="space-y-1">
+                  <div className=" grid">
                     <a
                       href="mailto:info@fitlife.com"
                       className="hover:text-red-500 transition"
