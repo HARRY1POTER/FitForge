@@ -247,6 +247,7 @@ const About = () => {
             ))}
           </div>
         </Marquee>
+        {/* <TrainerCard trainers={trainers} /> */}
       </div>
     </section>
   );

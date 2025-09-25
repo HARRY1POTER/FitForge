@@ -1,220 +1,3 @@
-// // // // // import { useNavigate } from "react-router-dom";
-
-// // // // // export default function TrainerCard({ trainer }) {
-// // // // //   const navigate = useNavigate();
-
-// // // // //   const handleView = () => {
-// // // // //     const loggedIn = localStorage.getItem("loggedIn");
-// // // // //     if (loggedIn === "true") {
-// // // // //       navigate(`/trainer/${trainer.id}`);
-// // // // //     } else {
-// // // // //       alert("Please log in to view trainer profile.");
-// // // // //       navigate("/login");
-// // // // //     }
-// // // // //   };
-
-// // // // //   return (
-// // // // //     <div className="border p-4 rounded shadow w-60 text-center">
-// // // // //       <img
-// // // // //         src={trainer.image}
-// // // // //         alt={trainer.name}
-// // // // //         className="w-20 h-20 mx-auto rounded-full"
-// // // // //       />
-// // // // //       <h3 className="text-lg font-semibold mt-2">{trainer.name}</h3>
-// // // // //       <p className="text-sm text-gray-500">{trainer.expertise}</p>
-// // // // //       <button
-// // // // //         onClick={handleView}
-// // // // //         className="mt-2 bg-blue-500 text-white px-4 py-1 rounded"
-// // // // //       >
-// // // // //         View Profile
-// // // // //       </button>
-// // // // //     </div>
-// // // // //   );
-// // // // // }
-
-// // // // import { useNavigate } from "react-router-dom";
-
-// // // // export default function TrainerCard({ trainer }) {
-// // // //   const navigate = useNavigate();
-
-// // // //   const handleView = () => {
-// // // //     const loggedIn = localStorage.getItem("loggedIn");
-// // // //     if (loggedIn === "true") {
-// // // //       navigate(`/trainer/${trainer.id}`);
-// // // //     } else {
-// // // //       alert("Please log in to view trainer profile.");
-// // // //       navigate("/login");
-// // // //     }
-// // // //   };
-
-// // // //   return (
-// // // //     <div className="w-72 flex-shrink-0 bg-gradient-to-br from-green-800 to-orange-700/80 rounded-2xl p-6 shadow-lg text-white border border-white/20 backdrop-blur-md transition-transform transform hover:scale-105 duration-300 my-20">
-// // // //       <div className="flex flex-col items-center text-center">
-// // // //         <img
-// // // //           src={trainer.image}
-// // // //           alt={trainer.name}
-// // // //           className="w-24 h-24 rounded-full border-4 border-orange-400 shadow-md object-cover mb-4"
-// // // //         />
-// // // //         <h3 className="text-2xl font-semibold">{trainer.name}</h3>
-// // // //         <p className="text-sm text-orange-200">{trainer.expertise}</p>
-// // // //         <button
-// // // //           onClick={handleView}
-// // // //           className="mt-5 bg-orange-500 hover:bg-orange-600 transition text-white px-6 py-2 rounded-full font-medium"
-// // // //         >
-// // // //           View Profile
-// // // //         </button>
-// // // //       </div>
-// // // //     </div>
-// // // //   );
-// // // // }
-
-// // // import { useNavigate } from "react-router-dom";
-
-// // // export default function TrainerCard({ trainer }) {
-// // //   const navigate = useNavigate();
-
-// // //   const handleView = () => {
-// // //     const loggedIn = localStorage.getItem("loggedIn");
-// // //     if (loggedIn === "true") {
-// // //       navigate(`/trainer/${trainer.id}`);
-// // //     } else {
-// // //       alert("Please log in to view trainer profile.");
-// // //       navigate("/login");
-// // //     }
-// // //   };
-
-// // //   return (
-// // //     <div className="w-72 flex-shrink-0 bg-gradient-to-br from-green-600 to-orange-500 rounded-3xl p-6 shadow-xl text-white border border-white/20 backdrop-blur-lg transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 my-12">
-// // //       <div className="flex flex-col items-center text-center">
-// // //         <img
-// // //           src={trainer.image}
-// // //           alt={trainer.name}
-// // //           className="w-28 h-28 rounded-full border-4 border-white shadow-xl object-cover mb-6"
-// // //         />
-// // //         <h3 className="text-2xl font-semibold text-white">{trainer.name}</h3>
-// // //         <p className="text-sm text-orange-200 mb-4">{trainer.expertise}</p>
-// // //         <button
-// // //           onClick={handleView}
-// // //           className="bg-orange-600 hover:bg-orange-700 transition text-white px-6 py-2 rounded-full font-medium transform hover:scale-105"
-// // //         >
-// // //           View Profile
-// // //         </button>
-// // //       </div>
-// // //     </div>
-// // //   );
-// // // }
-
-// // import { useNavigate } from "react-router-dom";
-
-// // export default function TrainerCard({ trainer }) {
-// //   const navigate = useNavigate();
-
-// //   const handleView = () => {
-// //     const loggedIn = localStorage.getItem("loggedIn");
-// //     if (loggedIn === "true") {
-// //       navigate(`/trainer/${trainer.id}`);
-// //     } else {
-// //       alert("Please log in to view trainer profile.");
-// //       navigate("/login");
-// //     }
-// //   };
-
-// //   // Dynamic background gradient based on expertise
-// //   const getGradient = () => {
-// //     switch (trainer.expertise.toLowerCase()) {
-// //       case "yoga":
-// //         return "bg-gradient-to-br from-blue-400 to-purple-500";
-// //       case "fitness":
-// //         return "bg-gradient-to-br from-green-500 to-yellow-400";
-// //       default:
-// //         return "bg-gradient-to-br from-gray-600 to-gray-800";
-// //     }
-// //   };
-
-// //   return (
-// //     <div
-// //       className={`w-72 flex-shrink-0 rounded-3xl p-6 shadow-xl text-white border border-white/20 backdrop-blur-lg transition-all transform hover:scale-105 hover:shadow-2xl duration-300 my-12 ${getGradient()} animate-pulse-card`}
-// //     >
-// //       <div className="flex flex-col items-center text-center">
-// //         <img
-// //           src={trainer.image}
-// //           alt={trainer.name}
-// //           className="w-32 h-32 rounded-full border-4 border-white shadow-xl object-cover mb-6"
-// //         />
-// //         <h3 className="text-2xl font-semibold text-white">{trainer.name}</h3>
-// //         <p className="text-sm text-orange-200 mb-4">{trainer.expertise}</p>
-// //         <button
-// //           onClick={handleView}
-// //           className="bg-orange-600 hover:bg-orange-700 transition-all text-white px-6 py-2 rounded-full font-medium transform hover:scale-105"
-// //         >
-// //           View Profile
-// //         </button>
-// //       </div>
-// //     </div>
-// //   );
-// // }
-
-// import { useNavigate } from "react-router-dom";
-
-// export default function TrainerCard({ trainer }) {
-//   const navigate = useNavigate();
-
-//   const handleView = () => {
-//     const loggedIn = localStorage.getItem("loggedIn");
-//     if (loggedIn === "true") {
-//       navigate(`/trainer/${trainer.id}`);
-//     } else {
-//       alert("Please log in to view trainer profile.");
-//       navigate("/login");
-//     }
-//   };
-
-//   // Dynamic background gradient based on expertise
-//   const getGradient = () => {
-//     switch (trainer.expertise.toLowerCase()) {
-//       case "yoga":
-//         return "bg-gradient-to-br from-blue-400 to-purple-600";
-//       case "fitness":
-//         return "bg-gradient-to-br from-green-500 to-yellow-400";
-//       case "nutrition":
-//         return "bg-gradient-to-br from-yellow-500 to-orange-600";
-//       default:
-//         return "bg-gradient-to-br from-gray-600 to-gray-800";
-//     }
-//   };
-
-//   return (
-//     <div
-//       className={`w-72 flex-shrink-0 rounded-3xl p-6 shadow-xl text-white border border-white/20 backdrop-blur-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl my-12 ${getGradient()} animate-pulse-card`}
-//     >
-//       <div className="flex flex-col items-center text-center space-y-4">
-//         {/* Profile Image */}
-//         <div className="relative w-32 h-32 mb-6">
-//           <img
-//             src={trainer.image}
-//             alt={trainer.name}
-//             className="w-full h-full rounded-full border-4 border-white shadow-xl object-cover transform transition-all duration-300 hover:scale-110 hover:rotate-3"
-//           />
-//         </div>
-
-//         {/* Name and Expertise */}
-//         <h3 className="text-2xl font-semibold text-white tracking-wide">
-//           {trainer.name}
-//         </h3>
-//         <p className="text-sm text-orange-200 mb-4">{trainer.expertise}</p>
-
-//         {/* View Profile Button */}
-//         <button
-//           onClick={handleView}
-//           className="bg-orange-600 hover:bg-orange-700 transition-all text-white px-6 py-2 rounded-full font-medium transform hover:scale-105 hover:shadow-lg"
-//         >
-//           View Profile
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { getImageUrl } from "../utils/formatImagePath";
@@ -222,33 +5,6 @@ import { getImageUrl } from "../utils/formatImagePath";
 export default function TrainerCard({ trainer }) {
   const navigate = useNavigate();
 
-  // const handleView = () => {
-  //   const loggedIn = localStorage.getItem("loggedIn");
-  //   if (loggedIn === "true") {
-  //     console.log(trainer.id);
-
-  //     navigate(`/trainer/${trainer.id}`);
-  //   } else {
-  //     alert("Please log in to view trainer profile.");
-  //     navigate("/login");
-  //   }
-  // };
-
-  // TrainerCard component
-  // const handleView = (id, fullName) => {
-  //   const loggedIn = localStorage.getItem("loggedIn");
-  //   if (loggedIn === "true") {
-  //     localStorage.setItem("_Id", id);
-  //     localStorage.setItem("fullName", fullName);
-
-  //     console.log(id); // Ensure trainer.id is available and correct
-  //     navigate(`/trainer-profile/trainer/${fullName}`);
-  //     // navigate(`/trainer-profile/trainers/${trainer.id}`); // Make sure you use the right path
-  //   } else {
-  //     alert("Please log in to view trainer profile.");
-  //     navigate("/login");
-  //   }
-  // };
   // console.log(trainer);
 
   const handleView = (id, fullName) => {
@@ -302,17 +58,6 @@ export default function TrainerCard({ trainer }) {
         </h3>
         <p className="text-sm text-orange-200 mb-4">{trainer.expertise}</p>
 
-        {/* View Profile Button */}
-        {/* <button
-          // onClick={handleView}
-          // onClick={() =>
-          //   handleView(trainer._id) && handleView(trainer.fullName)
-          // }
-          onClick={() => handleView(trainer._id, trainer.fullName)}
-          className="bg-orange-600 hover:bg-orange-700 transition-all text-white px-6 py-2 rounded-full font-medium transform hover:scale-105 hover:shadow-lg"
-        >
-          View Profile
-        </button> */}
         <button
           onClick={() => handleView(trainer._id, trainer.fullName)}
           type="submit"
@@ -335,20 +80,186 @@ export default function TrainerCard({ trainer }) {
   );
 }
 
-// import React from "react";
+// import React, { useState, useEffect, useRef } from "react";
+// import { useNavigate } from "react-router-dom";
+// import { toast } from "react-toastify";
+// import { getImageUrl } from "../utils/formatImagePath";
 
-// const TrainerCard = ({ trainer }) => {
+// export default function TrainerCard({ trainers = [] }) {
+//   const [index, setIndex] = useState(0);
+//   const autoSlideRef = useRef(null);
+//   const navigate = useNavigate();
+
+//   const goTo = (i) => {
+//     setIndex((i + trainers.length) % trainers.length);
+//     resetAutoSlide();
+//   };
+
+//   const next = () => goTo(index + 1);
+//   const prev = () => goTo(index - 1);
+
+//   useEffect(() => {
+//     const handleKey = (e) => {
+//       if (e.key === "ArrowRight") next();
+//       if (e.key === "ArrowLeft") prev();
+//     };
+//     window.addEventListener("keydown", handleKey);
+//     return () => window.removeEventListener("keydown", handleKey);
+//   }, [index]);
+
+//   useEffect(() => {
+//     let startX = 0;
+
+//     const handleTouchStart = (e) => {
+//       startX = e.touches[0].clientX;
+//     };
+
+//     const handleTouchEnd = (e) => {
+//       const endX = e.changedTouches[0].clientX;
+//       const diff = startX - endX;
+//       if (Math.abs(diff) > 50) {
+//         diff > 0 ? next() : prev();
+//       }
+//     };
+
+//     window.addEventListener("touchstart", handleTouchStart);
+//     window.addEventListener("touchend", handleTouchEnd);
+
+//     return () => {
+//       window.removeEventListener("touchstart", handleTouchStart);
+//       window.removeEventListener("touchend", handleTouchEnd);
+//     };
+//   }, [index]);
+
+//   useEffect(() => {
+//     startAutoSlide();
+//     return stopAutoSlide;
+//   }, [index, trainers]);
+
+//   const startAutoSlide = () => {
+//     stopAutoSlide();
+//     autoSlideRef.current = setInterval(() => {
+//       setIndex((prevIndex) => (prevIndex + 1) % trainers.length);
+//     }, 5000);
+//   };
+
+//   const stopAutoSlide = () => {
+//     if (autoSlideRef.current) clearInterval(autoSlideRef.current);
+//   };
+
+//   const resetAutoSlide = () => {
+//     stopAutoSlide();
+//     startAutoSlide();
+//   };
+
+//   const handleView = (id, fullName) => {
+//     const loggedIn = localStorage.getItem("loggedIn");
+
+//     if (loggedIn === "true") {
+//       const formattedName = fullName.toLowerCase().replace(/\s+/g, "-");
+//       localStorage.setItem("_Id", id);
+//       localStorage.setItem("fullName", fullName);
+//       navigate(`/trainer-profile/trainer/${formattedName}`);
+//     } else {
+//       toast("Please log in to view trainer profile.");
+//       setTimeout(() => {
+//         navigate("/login");
+//       }, 2000);
+//     }
+//   };
+
+//   if (!trainers.length) return null;
+
 //   return (
-//     <div className="card">
-//       <img
-//         src={trainer.profilePic}
-//         alt={trainer.fullName}
-//         className="w-24 h-24 object-cover rounded-full"
-//       />
-//       <h3>{trainer.fullName}</h3>
-//       <p>{trainer.expertise}</p>
+//     <div className="w-full px-4 py-10 flex flex-col items-center">
+//       <h1 className="text-4xl sm:text-5xl font-black text-center text-transparent bg-clip-text bg-gradient-to-b from-green-700 to-gray-400/10 uppercase tracking-tight mb-8 mt-2">
+//         Our Experienced Instructor
+//       </h1>
+
+//       <div className="relative w-full max-w-6xl h-[350px] sm:h-[420px] flex items-center justify-center overflow-hidden">
+//         {/* Left arrow */}
+//         <button
+//           onClick={prev}
+//           className="absolute left-2 sm:left-4 z-10 bg-green-800/70 text-white w-9 h-9 sm:w-10 sm:h-10 rounded-full hover:scale-110 transition"
+//         >
+//           ‹
+//         </button>
+
+//         {/* Trainer cards */}
+//         <div className="relative w-full h-full flex items-center justify-center">
+//           {trainers.map((trainer, i) => {
+//             const offset = (i - index + trainers.length) % trainers.length;
+//             const baseClass =
+//               "absolute transition-all duration-500 ease-in-out rounded-xl overflow-hidden shadow-xl";
+//             const commonStyle = "w-[180px] h-[240px] sm:w-[230px] sm:h-[300px]";
+
+//             let classes = baseClass + " " + commonStyle;
+
+//             if (offset === 0) {
+//               classes += " scale-110 z-20";
+//             } else if (offset === 1) {
+//               classes +=
+//                 " translate-x-36 sm:translate-x-52 scale-90 opacity-70 z-10";
+//             } else if (offset === 2) {
+//               classes +=
+//                 " translate-x-60 sm:translate-x-96 scale-75 opacity-50 z-0";
+//             } else if (offset === trainers.length - 1) {
+//               classes +=
+//                 " -translate-x-36 sm:-translate-x-52 scale-90 opacity-70 z-10";
+//             } else if (offset === trainers.length - 2) {
+//               classes +=
+//                 " -translate-x-60 sm:-translate-x-96 scale-75 opacity-50 z-0";
+//             } else {
+//               classes += " hidden";
+//             }
+
+//             return (
+//               <div
+//                 key={trainer._id}
+//                 className={`${classes} group cursor-pointer`}
+//                 onClick={() => goTo(i)}
+//               >
+//                 <img
+//                   src={getImageUrl(trainer.profilePic)}
+//                   alt={trainer.name}
+//                   className="w-full h-full object-cover group-hover:brightness-75 transition duration-300"
+//                 />
+//                 <button
+//                   onClick={(e) => {
+//                     e.stopPropagation();
+//                     handleView(trainer._id, trainer.fullName);
+//                   }}
+//                   className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-lg font-semibold"
+//                 >
+//                   <span className="bg-orange-500 px-4 py-2 rounded-full shadow-lg hover:bg-emerald-500 transition">
+//                     View Profile
+//                   </span>
+//                 </button>
+//               </div>
+//             );
+//           })}
+//         </div>
+
+//         {/* Right arrow */}
+//         <button
+//           onClick={next}
+//           className="absolute right-2 sm:right-4 z-10 bg-green-800/70 text-white w-9 h-9 sm:w-10 sm:h-10 rounded-full hover:scale-110 transition"
+//         >
+//           ›
+//         </button>
+//       </div>
+
+//       {/* Member Info */}
+//       <div className="text-center mt-8 sm:mt-12">
+//         <h2 className="text-2xl sm:text-3xl font-bold text-green-500 relative inline-block">
+//           {trainers[index].name || trainers[index].fullName}
+//           <span className="block w-14 sm:w-20 h-1 bg-green-500 absolute -left-20 top-full"></span>
+//           <span className="block w-14 sm:w-20 h-1 bg-green-500 absolute -right-20 top-full"></span>
+//         </h2>
+//         <p className="text-sm sm:text-base text-red-500 uppercase tracking-wider mt-5">
+//           {trainers[index]?.expertise}
+//         </p>
+//       </div>
 //     </div>
 //   );
-// };
-
-// export default TrainerCard;
+// }
