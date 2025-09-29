@@ -112,6 +112,7 @@ const About = () => {
   //       "https://i.ibb.co/Zz7HrXgJ/1750602389688-e-1756944000-v-beta-t-rsy-A7-Ftr-NJaz-CX1-VS9lkuh12-Hon-WNhh-Kes1n4wd6k-SA.jpg",
   //   },
   // ];
+
   const [trainers, setTrainers] = useState([]); // Start with an empty array
 
   useEffect(() => {
